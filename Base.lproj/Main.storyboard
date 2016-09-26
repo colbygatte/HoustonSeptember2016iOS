@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zoe-p1-547"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIb-Or-ICd">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGL-JB-LGu">
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.89651709113549516" green="1" blue="0.85832254390103202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="2li-HE-VF8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Okay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLS-ec-YxV">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32952649875059248" green="0.41800647888512354" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QIb-Or-ICd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="1hx-4z-qIl"/>
+                            <constraint firstItem="Zoe-p1-547" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="159" id="53p-BR-7Td"/>
+                            <constraint firstItem="Zoe-p1-547" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Wz-Jx-xHP"/>
+                            <constraint firstItem="QIb-Or-ICd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IDa-RP-YtK"/>
+                            <constraint firstItem="QIb-Or-ICd" firstAttribute="top" secondItem="aLS-ec-YxV" secondAttribute="bottom" constant="50" id="No2-9D-gBB"/>
+                            <constraint firstItem="Zoe-p1-547" firstAttribute="centerX" secondItem="QIb-Or-ICd" secondAttribute="centerX" id="Vuf-KF-U27"/>
+                            <constraint firstItem="QIb-Or-ICd" firstAttribute="centerX" secondItem="tGL-JB-LGu" secondAttribute="centerX" id="Zgl-sL-Qm4"/>
+                            <constraint firstItem="QIb-Or-ICd" firstAttribute="bottom" secondItem="Zoe-p1-547" secondAttribute="bottom" id="fhz-GT-S3M"/>
+                            <constraint firstItem="QIb-Or-ICd" firstAttribute="top" secondItem="Zoe-p1-547" secondAttribute="top" id="i6n-NW-Tg9"/>
+                            <constraint firstItem="aLS-ec-YxV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mmg-2n-Klh"/>
+                            <constraint firstItem="tGL-JB-LGu" firstAttribute="top" secondItem="Zoe-p1-547" secondAttribute="bottom" constant="25" id="pgv-5z-Q0z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aLS-ec-YxV" secondAttribute="trailing" constant="69" id="xWI-9h-9Ad"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="aLS-ec-YxV" id="ffZ-Uz-jAg"/>
+                        <outlet property="greetingTextField" destination="QIb-Or-ICd" id="zKW-Qo-q1j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91.304347826086968" y="8.9673913043478262"/>
+        </scene>
+    </scenes>
+</document>
